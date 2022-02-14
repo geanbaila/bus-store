@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login', 'LoginController@authenticate')->name('login');
+Route::get('/logout', 'LoginController@logout')->name('logout');
+
+Route::get('/producto/listar', 'ProductController@list')->name('stand');
+Route::get('/reporte/listar', 'ProductController@list')->name('chart');
+Route::get('/configuracion/listar', 'ProductController@list')->name('configuration');
+
