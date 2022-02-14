@@ -1,6 +1,6 @@
-# bus-store
+# simple stand
 
-Levantar la base de datos ejecutando
+execute the next command for setting up databases
 ```
 php artisan migrate
 ```
